@@ -2,6 +2,7 @@ package com.internshala.internshala.Mapper;
 
 import com.internshala.internshala.Dto.CarDetailsDTO;
 import com.internshala.internshala.Entities.CarDetails;
+import com.internshala.internshala.FuelType;
 import org.apache.catalina.mapper.Mapper;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,4 +18,6 @@ public class CarMapper {
     public CarDetailsDTO toDto (CarDetails carDetails){
         return mapper.map(carDetails, CarDetailsDTO.class);
     }
+
+
 }
