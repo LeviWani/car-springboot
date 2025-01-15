@@ -68,6 +68,7 @@ public List<CarDetailsDTO> getFilter(@PathVariable String value){
         return carServiceImplementation.viewAllSorting(value);
     }
 
+
 @DeleteMapping("md/{carModel}")
 public void deleteModel(@PathVariable long id ){
 carServiceImplementation.deleteEntry(id);
